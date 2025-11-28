@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App para DAW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ext/w3.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="ext/jquery.min.js"></script>
+    <script src="ext/xmllint.min.js"></script>
+    <script src="library.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("main").load("presentacion.html");
+            $("#inicio").click(cargaPresentacion);
+            $("#tabla").click(cargaTabla);
+            $("#formulario").click(cargaFormulario);
+        });
+    </script>
+</head>
+
+<body>
+    <header class="tarjeta">
+        <h1>Despliegue de aplicaciones web</h1>
+        <nav>
+            <ul>
+                <li><a id="inicio">Inicio</a></li>
+                <li><a id="tabla">Estudiantes</a></li>
+                <li><a id="formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main></main>
+    <footer class="tarjeta">
+        <p>Aplicación de ejmplo DAW</p>
+    </footer>
+</body>
+
+</html>
