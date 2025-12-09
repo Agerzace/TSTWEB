@@ -2,7 +2,7 @@
 <?php
 include 'result2XML.php';
 
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('mysql','root','pass');
 
 if (!$con) {
   echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
